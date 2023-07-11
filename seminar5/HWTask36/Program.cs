@@ -28,7 +28,7 @@ int L()
 int length = L();
 int sum = 0;
 int[] N = new int[length];
-Console.Write("{");
+Console.Write("[");
 for (int i = 0; i < length; i++)
 {
     N[i] = new Random().Next(100, 1000);
@@ -36,5 +36,5 @@ for (int i = 0; i < length; i++)
     if (i%2 != 0)
     sum=sum+N[i];
 }
-Console.Write("}");
+Console.Write("]");
 Console.WriteLine($" -> сумма чисел на нечетных позициях: {sum}");
